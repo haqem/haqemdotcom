@@ -11,7 +11,7 @@ angular
 
         $scope.rowsInfo = {
             min : 1,
-            max : 9,
+            max : 10,
             init : 5
         };
 
