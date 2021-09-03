@@ -31,11 +31,11 @@ angular
                 data[gradeType + "Standing"] = "Dean's List";
                 data[gradeType + "Animation"] = true;
                 data[gradeType + "ProgressBar"] = "bg-success";
-            } else if (data[gradeType] >= 3.5 && data[gradeType] < 3.8) {
+            } else if (data[gradeType] >= 3.67 && data[gradeType] < 3.8) {
                 data[gradeType + "Standing"] = "Dean's List";
                 data[gradeType + "Animation"] = true;
                 data[gradeType + "ProgressBar"] = "bg-info";
-            } else if (data[gradeType] >= 2 && data[gradeType] < 3.5) {
+            } else if (data[gradeType] >= 2 && data[gradeType] < 3.66) {
                 data[gradeType + "Standing"] = "Good Standing";
                 data[gradeType + "ProgressBar"] = "bg-warning";
             } else {
