@@ -27,11 +27,11 @@ angular
                 return data;
             }
 
-            if (data[gradeType] >= 3.8) {
+            if (data[gradeType] >= 3.7) {
                 data[gradeType + "Standing"] = "Dean's List";
                 data[gradeType + "Animation"] = true;
                 data[gradeType + "ProgressBar"] = "bg-success";
-            } else if (data[gradeType] >= 3.67 && data[gradeType] < 3.8) {
+            } else if (data[gradeType] >= 3.67 && data[gradeType] < 3.7) {
                 data[gradeType + "Standing"] = "Dean's List";
                 data[gradeType + "Animation"] = true;
                 data[gradeType + "ProgressBar"] = "bg-info";
