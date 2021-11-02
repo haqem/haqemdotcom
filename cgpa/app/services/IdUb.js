@@ -5,9 +5,9 @@ angular
     .factory("cgpaFactory", function($http) {
 
         function getGradePoints() {
-            var gradePoints = {"A+" : 4.00, "A" : 4.00, "A-" : 3.67, "B+" : 3.33, "B" : 3.00,
-                "B-" : 2.67, "C+" : 2.33, "C" : 2.00, "C-" : 1.67, "D+" : 1.33,
-                "D" : 1.00, "F" : 0.00};
+            var gradePoints = {"A" : 4.00, "B+" : 3.50, "B" : 3.00,
+                "C+" : 2.50, "C" : 2.00, "D+" : 1.50, "D" : 1.00,
+                "E" : 0.00};
 
             return gradePoints;
         }
@@ -19,7 +19,7 @@ angular
         }
 
         function getCreditHours() {
-            return [1, 2, 3, 4, 5, 6, 7, 8];
+            return [1, 2, 3, 4, 5, 6];
         }
 
         function getStanding(data, gradeType) {
