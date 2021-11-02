@@ -27,12 +27,12 @@ angular
                 return data;
             }
 
-            if (data[gradeType] >= 3.8) {
+            if (data[gradeType] >= 4.0) {
                 data[gradeType + "Standing"] = "Dean's List";
                 data[gradeType + "Animation"] = true;
                 data[gradeType + "ProgressBar"] = "bg-success";
-            } else if (data[gradeType] >= 3.5 && data[gradeType] < 3.8) {
-                data[gradeType + "Standing"] = "Dean's List";
+            } else if (data[gradeType] >= 3.5 && data[gradeType] < 4.0) {
+                data[gradeType + "Standing"] = "Almost Get Dean's List";
                 data[gradeType + "Animation"] = true;
                 data[gradeType + "ProgressBar"] = "bg-info";
             } else if (data[gradeType] >= 2 && data[gradeType] < 3.5) {
@@ -98,7 +98,7 @@ angular
         function calculateGrades(data) {
             var result = calculateGPA(data.rows);
 
-            if ("cgpa" in data && "creditsCompleted" in data && data["cgpa"] <= 4
+            if ("cgpa" in data && "creditsCompleted" in data && data["cgpa"] <= 5
                 && data["creditsCompleted"] > 0) {
                 result = calculateCGPA(data, result);
             }
